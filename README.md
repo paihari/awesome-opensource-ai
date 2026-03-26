@@ -104,10 +104,12 @@
 
 #### Multimodal Models (Vision + Language)
 
-- **[LLaVA 1.6 / Next (Liu et al.)](https://github.com/haotian-liu/LLaVA)** ![GitHub stars](https://img.shields.io/github/stars/haotian-liu/LLaVA?style=social) - Most popular open vision-language model. Strong image understanding and reasoning.
-- **[Phi-3.5-Vision / Phi-4-Multimodal (Microsoft)](https://github.com/microsoft/PhiCookBook)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/PhiCookBook?style=social) - Lightweight multimodal with excellent chart/table/document understanding.
-- **[Qwen2.5-VL (Alibaba)](https://github.com/QwenLM/Qwen-VL)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen-VL?style=social) - State-of-the-art open multimodal (text + image + video). Tops many VL benchmarks.
-- **[InternVL 2.5 (OpenGVLab)](https://github.com/OpenGVLab/InternVL)** ![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/InternVL?style=social) - Massive open multimodal family (up to 26B) with strong performance on OCR, charts, and video.
+- **[Qwen3-VL (Alibaba)](https://github.com/QwenLM/Qwen3-VL)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen3-VL?style=social) - Latest flagship VLM with native 256K context (expandable to 1M), visual agent capabilities, 3D grounding, and superior multimodal reasoning. Major leap over Qwen2.5-VL.
+- **[InternVL3 (OpenGVLab)](https://github.com/OpenGVLab/InternVL)** ![GitHub stars](https://img.shields.io/github/stars/OpenGVLab/InternVL?style=social) - Native multimodal pretraining with mixed preference optimization (MPO). Superior perception and reasoning over InternVL 2.5, extends to GUI agents and 3D vision.
+- **[GLM-4.5V / GLM-4.1V-Thinking (Zhipu AI)](https://github.com/zai-org/GLM-V)** ![GitHub stars](https://img.shields.io/github/stars/zai-org/GLM-V?style=social) - Strong multimodal reasoning with scalable reinforcement learning. Compares favorably with Gemini-2.5-Flash on benchmarks.
+- **[LLaVA-OneVision](https://github.com/LLaVA-VL/LLaVA-NeXT)** ![GitHub stars](https://img.shields.io/github/stars/LLaVA-VL/LLaVA-NeXT?style=social) - Successor to LLaVA 1.6 with expanded capabilities across vision-language tasks.
+- **[MiniCPM-V 2.6](https://github.com/OpenBMB/MiniCPM-V)** ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM-V?style=social) - Handles images up to 1.8M pixels with top-tier OCR performance. Excellent for on-device deployment.
+- **[Gemma 3 (Google)](https://github.com/google-deepmind/gemma)** ![GitHub stars](https://img.shields.io/github/stars/google-deepmind/gemma?style=social) - Lightweight multimodal supporting vision-language input, optimized for efficiency and on-device use.
 
 #### Speech & Audio Models (TTS, STT, Music)
 
