@@ -10,6 +10,22 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](./CONTRIBUTING.md)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-blue.svg?style=flat-square)](./LICENSE)
 
+[![Managed by MoltFounders](https://img.shields.io/badge/Managed%20By-MoltFounders-F4F4F5?style=for-the-badge&labelColor=18181B&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjYzIiBoZWlnaHQ9IjEyNjMiIHZpZXdCb3g9IjAgMCAxMjYzIDEyNjMiPjxwYXRoIGZpbGw9IiNmZWZlZmUiIGQ9Ik0xMjYzLjAwMyAxNjAuNzQ2Yy01LjM4NyAxMy44Ny0yMy43MSAyNC40OTQtMzYuODg4IDI5LjUzNy0xOS40MyA3LjQ0LTUwLjg1OCAxMS42MzQtNzIuMTg1IDE2LjY2LTI4LjA5NiA2LjYyNS01Ni44MDQgMTMuMzM4LTg0LjM0MSAyMi4wNjMtMjAuODU4IDYuNjEtNDAuNDI5IDE0LjkyLTYwLjMwNiAyMy45ODktOS43MTQgNC40MzItMTkuNTU1IDguNjk0LTI4Ljg3MyAxMy45MjMtMjAuNjkgMTEuNjExLTQxLjQ2MiAyNi40NzUtNTkuNjM0IDQxLjcyOC0xMi44NTMgMTAuNzg2LTI0LjgzNiAyMi41MzItMzYuOTc0IDM0LjA5Ny04LjYzOCA4LjIyOS0xNy40NDQgMTYuMDE1LTI1LjYzMiAyNC43MjUtMTEuMDU0IDExLjc1OC0yMS4yOTkgMjQuMjI4LTMyLjA1MiAzNi4yNDgtNC4wMSA0LjQ4NC0xOC4xOTkgMTcuNjMtMTguNzA5IDIzLjUyIDIuMTcgMS40MDUgOS40NjYgMS4zOSAxMi40MTQgMi4xNDcgMjAuODIgNS4zNDUgMzAuNjk5IDE0Ljc0NCAzNC4zNjYgMzYuMDAyIDQuOTc2IDIwLjE3Ny05LjU0NyAzOC4xNTQtMjMuNzc4IDQ5LjcyMS0xNy44NjYgMTQuNTIyLTIxLjg2NiAxNS4zNDctOS44OTIgMzUuNjMzIDIuNjg0IDQuNTQ4IDMuNzAzIDIxLjUzIDcuMTE0IDI4LjczNiA0LjA5NiA4LjY1NCA4Ljk0IDE2Ljg3OCAxNC4wMjMgMjUuMTU2IDUuMDUgOS4yODMgNS45MTMgMTcuNjMzIDcuOTcgMjcuNjI4IDcuMTUyIDM0Ljc0My0yLjk2NCA2OC40MjMtMjYuNTk3IDk0LjcyNS01LjkxOCA2Ljc5Mi0yMS4zOTYgMTguNzc3LTIyLjk3MiAyNy44MTYtMy4xNyAxOC4xODQtMjAuOTczIDQwLjI2OC0yMy4xOSA1Ni4wODUtMi41MDcgMTcuODY0IDcuMTkyIDM0Ljc5NS4zODQgNTQuMzIzLTUuNjE4IDE2LjExMS0xNC4zNzggMjYuNzgzLTIwLjA3MyA0Mi4zNjktMi43OTUgOC45NTEtMi44MTggMTkuMTUyLTQuNDcgMjguMjktNC40NzQgMjUuMjctMTAuMTI4IDU0LjUxLTI1LjQyOCA3NS42MzItMTEuNzQgMTYuMjA4LTEzLjM1NyAxNS4wOS0xMC44OTQgMzUuNTAyIDEuODUzIDIzLjM0Ny0uMDA1IDM5LjE5My0xMy44NDIgNTguNTQ5LTI0LjQ4OCAzNC4yNDItNTUuMzQ3IDQ3LjczNy05My41MzYgMjQuMTg0LTIwLjg1OS0xMi44NzItMzguMzM1LTI0Ljg3LTUyLjM0Ny00NC42OS01LjMyLTcuNTI3LTkuMzI0LTMyLjIwMi0xNC41MTQtMzUuMDEtMjEuODMyLTExLjgwOC00Ni4yOTctMjEuMzM5LTY2LjE1LTM2Ljg5NC01My4xNzYtMzkuMTEtMTA3LjM4Mi04MS43ODQtMTM4LTE0MS44Mi05LjI2Ni0xOC4xNjktMTEuMjg1LTMyLjM2LTEwLjQ1OC01Mi4zNzMtLjQtMTUuNzc4IDYuNTg5LTI4Ljg1IDEwLjkxNi00My40OSAzLjkzNC0xNS4wNCA5LjE1NS0zMC40NzMgMTEuMzUyLTQ1Ljg4NCAxLjYwMy0xMS4yNDUgNS40MjktMTcuNDQxIDkuMDMxLTI3LjUzMyA3LjM1NS0yMC42MDQgMTYuNTMzLTQwLjU1IDI4LjIxNy01OS4wODkgNS40Ny04LjY4MiAxMi44OTgtMTYuOTA3IDE4Ljc5Mi0yNS4zNTggMjYuNTc5LTM5LjQ2NiA2Mi45MzgtNzEuNDYzIDk3LjA2NC0xMDQuMjE0IDEyLjI1OC0xMS4yNzggMjQuNjg2LTI0LjE3MiAzOC44NDUtMzMuMDIgMTQuMDM4LTguNzcyIDQuNzM3LTIwLjA0MyAyLjc0LTMyLjI1Mi04LjM0NC01MS4wMTQtMzIuNTIzLTg4LjE1MS02Mi44My0xMjguNDQ1YTMwOC42IDMwOC42IDAgMCAwLTEwNC42MDktODguOTE2Yy01LjE1NS0yLjcyNi0xNS41NzctOC41MDctMjAuNzkyLTEwLjQ1OC0yMy43MjYtOC44ODEtNDguNzc5LTE2LjM5Mi03My44NzEtMjAuMTUtMTQuMDE0LTIuNjQ1LTI5Ljg5LTIuMTctNDMuNzM0LTQuMDYtMTkuNTA2LTIuNjYzLTM2LjkyNy00LjI2OC01Ni43NjUtMi44MTctMTAuNTk3Ljc3NC0yMS4xMiAzLjczNS0zMS43MSA0Ljk5NC0xOC4xMjUgMi4xNTUtNDEuODEyIDUuNjczLTU4LjM3LTMuNTYtMjIuMTE1LTEyLjgyNC0yNy45MS00NC4yMDMtMTQuNTgtNjUuMzQgMTMuODI3LTIxLjkyOCA0Ny43LTI3LjcyIDcxLjY1Mi0zMi41MDQgNDEuMjUtOC4yNCA4NC4wMDUtMi4yMzMgMTI1LjUzOS0uOTUgNi4xOTMuMTg0IDEzLjAyNiAxLjc4OCAxOS4xNTQgMS45MjcgMTIuMDQxLjI3NCAyMi45NCAxLjY2MSAzNC43MjcgMy45OGEzOTguMiAzOTguMiAwIDAgMSAxMjQuODUgNDguNDdjNjkuODggNDEuMjQxIDEyMC41NiA5My43ODYgMTYxLjUyNCAxNjMuNDc0IDUuMTQ1IDguNzUyIDEwLjg2MiAyMC42MyAxNS43NzIgMjkuNzcgNi40OTggMTIuMDk5IDExLjM3NCAyOC4zNDUgMTUuMzU1IDQxLjM4NyAyLjA1NiA2LjczNyAyLjc0MiAyMy40NjUgOC43NDggMjcuNTU5IDMuMjI3LjMxNyA4LjQzOC05Ljg5NiAxMS4xMzYtMTIuNzM2IDE3Ljc2NS0xOC43MDggMzUuNDQ1LTEyLjkgNTAuODYyLTM2Ljk3IDkuNzkzLTE1LjI5IDI0LjYxNS0zMi42MTEgMzUuNzczLTQ3LjM1IDI2LjY0Mi0zNS4xOTUgNjEuMzUtNjMuNjQyIDk0Ljg5Ni05MS44ODggNy4wNTYtNS45MSAxNS40MjctMTAuODI1IDIzLjA0NS0xNS45ODQgMzguNTQtMjcuNzQ4IDgxLjQ0My00Ni45NzUgMTI1LjEzNi02NS4wMjMgOC4xNTQtMy41NTQgMTYuOTE1LTUuNSAyNS4yMzgtOC41MDggNTMuOTQ0LTE5LjQ5NSAxMTEuMTQ4LTI4LjUwNCAxNjcuMTA4LTQwLjM2NiAxNi41NTItMy41MSAzMS45MTMtNi44NTMgNDcuOTQ4LjU3IDEyLjU5OCA1LjgzOCAyMS45NSAxMS42MzUgMjcuMzA1IDI1LjE0M3oiLz48L3N2Zz4%3D)](https://moltfounders.com/jobs/09a95833-fbc1-4805-ac6c-8a45227e0ee4)
+
+<sub>by **Boring Dystopia Development**</sub>
+
+<p align="center">
+  <a href="https://boringdystopia.ai/">
+    <img src="https://img.shields.io/badge/boringdystopia.ai-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="boringdystopia.ai" />
+  </a>&nbsp;
+  <a href="https://x.com/alvinunreal">
+    <img src="https://img.shields.io/badge/X-@alvinunreal-000000?style=for-the-badge&logo=x&logoColor=white" alt="X @alvinunreal" />
+  </a>&nbsp;
+  <a href="https://t.me/boringdystopiadevelopment">
+    <img src="https://img.shields.io/badge/Telegram-Join%20channel-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Join channel" />
+  </a>
+</p>
+
 </div>
 
 ---
@@ -101,9 +117,11 @@
 
 #### Large Language Models (Base + Chat)
 
-- **[Qwen3.5 (Alibaba)](https://github.com/QwenLM/Qwen)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen?style=social) - State-of-the-art open series spanning from small to frontier-scale models, consistently strong in coding, math, and instruction following.
+- **[Qwen3.5 (Alibaba)](https://github.com/QwenLM/Qwen)** ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen?style=social) - Native multimodal open series spanning from small to frontier-scale models (0.8B–122B). Released Feb 2026 with 397B total MoE params (17B active), strong in coding, math, vision, and instruction following.
 - **[DeepSeek-V3.2 / R1 (DeepSeek)](https://github.com/deepseek-ai/DeepSeek-V3)** ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3?style=social) - Mixture-of-Experts family with exceptional reasoning, math, and efficient large-scale inference.
 - **[Gemma 3 (Google)](https://github.com/google-deepmind/gemma)** ![GitHub stars](https://img.shields.io/github/stars/google-deepmind/gemma?style=social) - Lightweight yet powerful open models with excellent efficiency for on-device use. Strong multilingual support across 100+ languages.
+- **[MiniMax-M2.1 / M1 (MiniMax)](https://github.com/MiniMax-AI/MiniMax-M1)** ![GitHub stars](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-M1?style=social) - Open-weight MiniMax model line spanning long-context reasoning and agentic software tasks, with strong tool use and publicly released weights for local deployment.
+- **[Kimi K2.5 (Moonshot AI)](https://github.com/MoonshotAI/Kimi-K2.5)** ![GitHub stars](https://img.shields.io/github/stars/MoonshotAI/Kimi-K2.5?style=social) - Frontier open-weight MoE model with 256K context, strong coding and reasoning performance, and native multimodal + tool-use support for agentic workflows.
 - **[Mistral Large / Nemo / Small](https://github.com/mistralai)** - High-performance model family with strong multilingual capability, tool use, and efficient deployment profiles.
 - **[Phi-4 / Phi-3.5 (Microsoft)](https://github.com/microsoft/PhiCookBook)** ![GitHub stars](https://img.shields.io/github/stars/microsoft/PhiCookBook?style=social) - Small but highly capable models optimized for reasoning, edge devices, and on-device inference.
 - **[GLM-5 (Zhipu AI)](https://github.com/zai-org/GLM-5)** ![GitHub stars](https://img.shields.io/github/stars/zai-org/GLM-5?style=social) - Strong open model line with solid coding, reasoning, and agentic-task performance.
@@ -153,6 +171,7 @@
 - **[MLC-LLM](https://github.com/mlc-ai/mlc-llm)** ![GitHub stars](https://img.shields.io/github/stars/mlc-ai/mlc-llm?style=social) - Deployment engine that compiles and runs LLMs across browsers, mobile devices, and local hardware.
 - **[llama-cpp-python](https://github.com/abetlen/llama-cpp-python)** ![GitHub stars](https://img.shields.io/github/stars/abetlen/llama-cpp-python?style=social) - Official Python bindings for llama.cpp.
 - **[KoboldCpp](https://github.com/LostRuins/koboldcpp)** ![GitHub stars](https://img.shields.io/github/stars/LostRuins/koboldcpp?style=social) - User-friendly llama.cpp fork focused on role-playing and creative writing.
+- **[Potato OS](https://github.com/slomin/potato-os)** ![GitHub stars](https://img.shields.io/github/stars/slomin/potato-os?style=social) - Linux distribution for fully local AI inference on Raspberry Pi 5 and 4. Optimized for running open models at the edge.
 
 #### High-performance Serving & API Servers
 
@@ -196,6 +215,7 @@
 - **[Swarm](https://github.com/openai/swarm)** ![GitHub stars](https://img.shields.io/github/stars/openai/swarm?style=social) - Lightweight multi-agent orchestration from OpenAI.
 - **[Swarms](https://github.com/kyegomez/swarms)** ![GitHub stars](https://img.shields.io/github/stars/kyegomez/swarms?style=social) - Bleeding-edge enterprise multi-agent orchestration.
 - **[Llama-Agents](https://github.com/run-llama/llama-agents)** ![GitHub stars](https://img.shields.io/github/stars/run-llama/llama-agents?style=social) - Async-first multi-agent system.
+- **[Mastra](https://github.com/mastra-ai/mastra)** ![GitHub stars](https://img.shields.io/github/stars/mastra-ai/mastra?style=social) - TypeScript-first agent framework with built-in RAG, workflows, tool integrations, observability and observational memory.
 
 #### Autonomous Coding Agents
 
@@ -204,6 +224,8 @@
 - **[OpenCode](https://github.com/anomalyco/opencode)** ![GitHub stars](https://img.shields.io/github/stars/anomalyco/opencode?style=social) - Terminal-native autonomous coding agent.
 - **[Aider](https://github.com/paul-gauthier/aider)** ![GitHub stars](https://img.shields.io/github/stars/paul-gauthier/aider?style=social) - Command-line pair-programming agent.
 - **[Pi (badlogic)](https://github.com/badlogic/pi-mono)** ![GitHub stars](https://img.shields.io/github/stars/badlogic/pi-mono?style=social) - Terminal coding agent with hash-anchored edits, LSP integration, subagents, MCP support, and package ecosystem.
+- **[Mistral-Vibe (Mistral)](https://github.com/mistralai/mistral-vibe)** ![GitHub stars](https://img.shields.io/github/stars/mistralai/mistral-vibe?style=social) - Minimal CLI coding agent by Mistral. Lightweight, fast, and designed for local development workflows.
+- **[Nanocoder (Nano-Collective)](https://github.com/Nano-Collective/nanocoder)** ![GitHub stars](https://img.shields.io/github/stars/Nano-Collective/nanocoder?style=social) - Beautiful local-first coding agent running in your terminal. Built for privacy and control with support for multiple AI providers via OpenRouter.
 
 #### Domain-Specific Agents
 
@@ -216,6 +238,8 @@
 
 - **[Letta (ex-MemGPT)](https://github.com/letta-ai/letta)** ![GitHub stars](https://img.shields.io/github/stars/letta-ai/letta?style=social) - Platform for building stateful agents with advanced memory that learn and self-improve over time.
 - **[Mem0](https://github.com/mem0ai/mem0)** ![GitHub stars](https://img.shields.io/github/stars/mem0ai/mem0?style=social) - Universal memory layer for AI agents. Persistent, multi-session memory across models and environments.
+- **[Forgetful](https://github.com/ScottRBK/forgetful)** ![GitHub stars](https://img.shields.io/github/stars/ScottRBK/forgetful?style=social) - MCP server for persistent AI agent memory. Stores atomic single-concept notes and auto-links them into a knowledge graph via semantic similarity. SQLite or PostgreSQL.
+- **[Hindsight](https://github.com/vectorize-io/hindsight)** ![GitHub stars](https://img.shields.io/github/stars/vectorize-io/hindsight?style=social) - State-of-the-art long-term memory for AI agents by Vectorize. Fully self-hosted, MIT-licensed, with integrations for LangChain, CrewAI, LlamaIndex, Vercel AI SDK, and more.
 
 ---
 
@@ -251,6 +275,11 @@
 - **[Docling](https://github.com/docling-project/docling)** ![GitHub stars](https://img.shields.io/github/stars/docling-project/docling?style=social) - Document processing toolkit for turning PDFs and other files into structured data for GenAI workflows.
 - **[Unstructured](https://github.com/Unstructured-IO/unstructured)** ![GitHub stars](https://img.shields.io/github/stars/Unstructured-IO/unstructured?style=social) - Best-in-class document preprocessing.
 - **[ColPali / ColQwen](https://github.com/illuin-tech/colpali)** ![GitHub stars](https://img.shields.io/github/stars/illuin-tech/colpali?style=social) - Vision-language models for document retrieval.
+
+#### Web Data Ingestion
+
+- **[Crawl4AI](https://github.com/unclecode/crawl4ai)** ![GitHub stars](https://img.shields.io/github/stars/unclecode/crawl4ai?style=social) - LLM-friendly web crawler that turns websites into clean Markdown for RAG and agentic workflows.
+- **[Lightpanda](https://github.com/lightpanda-io/browser)** ![GitHub stars](https://img.shields.io/github/stars/lightpanda-io/browser?style=social) - Machine-first headless browser in Zig; rendering-free and ultra-lightweight for AI agent browsing.
 
 ---
 
@@ -368,6 +397,7 @@
 - **[NVIDIA NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)** ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=social) - Programmable guardrails toolkit.
 - **[Guardrails AI](https://github.com/guardrails-ai/guardrails)** ![GitHub stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=social) - Structure and validation for LLM outputs.
 - **[LLM Guard](https://github.com/protectai/llm-guard)** ![GitHub stars](https://img.shields.io/github/stars/protectai/llm-guard?style=social) - Comprehensive input/output scanner.
+- **[Director-AI](https://github.com/anulum/director-ai)** ![GitHub stars](https://img.shields.io/github/stars/anulum/director-ai?style=social) - Real-time LLM hallucination guardrail with NLI + RAG fact-checking and token-level streaming halt.
 - **[LlamaGuard (Meta)](https://github.com/meta-llama/PurpleLlama)** ![GitHub stars](https://img.shields.io/github/stars/meta-llama/PurpleLlama?style=social) - Open safety classifier models.
 - **[Garak](https://github.com/leondz/garak)** ![GitHub stars](https://img.shields.io/github/stars/leondz/garak?style=social) - LLM vulnerability scanner.
 - **[Promptfoo](https://github.com/promptfoo/promptfoo)** ![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social) - LLM testing and red-teaming framework.
@@ -456,6 +486,7 @@
 - **[Time Series Library (TSLib)](https://github.com/thuml/Time-Series-Library)** ![GitHub stars](https://img.shields.io/github/stars/thuml/Time-Series-Library?style=social) - Comprehensive benchmark for time-series models.
 - **[Chronos (Amazon)](https://github.com/amazon-science/chronos-forecasting)** ![GitHub stars](https://img.shields.io/github/stars/amazon-science/chronos-forecasting?style=social) - Pretrained foundation models for time-series forecasting.
 - **[Darts](https://github.com/unit8co/darts)** ![GitHub stars](https://img.shields.io/github/stars/unit8co/darts?style=social) - Easy-to-use time-series forecasting library.
+- **[AutoTS](https://github.com/winedarksea/AutoTS)** ![GitHub stars](https://img.shields.io/github/stars/winedarksea/AutoTS?style=social) - Automated time series forecasting with broad model selection, ensembling, anomaly detection, and holiday effects. Designed for production deployment with minimal setup.
 
 #### Edge / On-device AI
 
@@ -510,6 +541,8 @@
 
 #### IDE Plugins & Extensions
 
+- **[llama.vim](https://github.com/ggml-org/llama.vim)** ![GitHub stars](https://img.shields.io/github/stars/ggml-org/llama.vim?style=social) - Local LLM-powered code completion plugin for Vim/Neovim using llama.cpp. Fast, privacy-first, no API key needed.
+- **[CodeCompanion.nvim](https://github.com/olimorris/codecompanion.nvim)** ![GitHub stars](https://img.shields.io/github/stars/olimorris/codecompanion.nvim?style=social) - AI-powered coding assistant for Neovim. Inline code generation, chat, actions, and tool use with support for multiple LLM providers.
 - **[Continue VS Code / JetBrains](https://github.com/continuedev/continue)** ![GitHub stars](https://img.shields.io/github/stars/continuedev/continue?style=social) - Most installed open-source AI extension.
 - **[Jupyter AI](https://github.com/jupyterlab/jupyter-ai)** ![GitHub stars](https://img.shields.io/github/stars/jupyterlab/jupyter-ai?style=social) - Chat and code generation inside notebooks.
 
