@@ -8,9 +8,9 @@ Thank you for considering contributing to this curated list. We maintain **elite
 
 This is not a directory of every open-source AI project. We curate tools that have survived real-world usage, earned community trust, and demonstrate sustained excellence.
 
-### Elite Tier Criteria (Must Meet 4 out of 5)
+### Elite Tier Criteria (Must Meet ALL)
 
-Projects must satisfy **at least 4 of the following 5 criteria** to be considered elite-tier:
+Projects must satisfy **ALL of the following 5 criteria** to be considered elite-tier. No exceptions except under maintainer discretion for truly exceptional cases.
 
 | Criterion | Threshold | Why It Matters |
 |-----------|-----------|----------------|
@@ -20,14 +20,11 @@ Projects must satisfy **at least 4 of the following 5 criteria** to be considere
 | **🏭 Production Usage** | Evidence of real-world deployment | Case studies, integrations, production issues/PRs |
 | **📚 Quality Standards** | Proper docs, tests, releases | Not a thrown-together experiment |
 
-### Strong Preference
+### No Exceptions Except Maintainer Discretion
 
-Ideally projects should meet **all 5 criteria**. Meeting 4/5 is acceptable if the missing criterion is compensated by:
+Meeting 4/5 is **not acceptable**. Projects must meet all 5 criteria. The only path for projects falling short:
 
-- **🏢 Major Organization Backing** — Microsoft, Google, Meta, Hugging Face, NVIDIA, etc. (stars threshold: 500+)
-- **🎯 Foundational Tool** — Other elite tools in this list depend on it
-- **🔬 Research Lab Origin** — Stanford, Berkeley, DeepMind, OpenAI (pre-AGI era), etc.
-- **💡 Exceptional Innovation** — Unique approach solving a critical gap, with strong production traction
+- **Maintainer Override** — Reserved for truly exceptional cases with extraordinary production traction or major organizational backing
 
 ---
 
@@ -58,7 +55,7 @@ Ideally projects should meet **all 5 criteria**. Meeting 4/5 is acceptable if th
 
 ### Before Submitting
 
-1. **Verify your project meets at least 4 of 5 elite criteria** — if not, don't submit here
+1. **Verify your project meets ALL 5 elite criteria** — if not, don't submit here
 2. **Check for duplicates** — search the README first
 3. **Ensure correct categorization** — place in the most specific section
 4. **Write a factual description** — one sentence, no fluff
@@ -84,7 +81,7 @@ Your PR must include:
 
 ### Elite Criteria Checklist (4/5 Required)
 
-- [ ] **Elite Criteria:** 4 of 5 met
+- [ ] **Elite Criteria:** ALL 5 met
   - ⭐ Stars: [count] (threshold: 1000+)
   - 📅 Age: [months] (threshold: 12+)
   - 🔄 Active: [last commit date] (within 30 days)
@@ -170,7 +167,7 @@ The maintainer reserves final judgment on all submissions, including:
 - **Removing** existing entries if quality degrades or project becomes abandoned
 - **Elevating** tools from emerging to elite tier as they mature
 
-**Remember:** Meeting 4/5 criteria guarantees consideration, not acceptance. This list is about trust and proven value.
+**Remember:** Meeting ALL 5 criteria guarantees consideration, not acceptance. This list is about trust and proven value. Maintainer override is reserved for truly exceptional cases only.
 
 ---
 
