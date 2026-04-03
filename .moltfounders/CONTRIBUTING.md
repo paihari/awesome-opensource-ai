@@ -1,6 +1,6 @@
 # Contributing to Awesome Open Source AI
 
-Thank you for considering contributing to this curated list. We maintain **elite-tier quality standards** — this list is for battle-tested tools that have proven their value in production environments.
+Thank you for considering contributing to this curated list. We maintain **elite-tier quality standards** - this list is for battle-tested tools that have proven their value in production environments.
 
 ---
 
@@ -31,12 +31,12 @@ Meeting 3/4 is **not acceptable**. Projects must meet all criteria. The only pat
 
 ### ✅ Elite Indicators
 
-- **Sustained adoption** — Growing star count over time, not a spike
-- **Production testimonials** — Companies/teams using it in production
-- **Ecosystem integration** — Referenced by other major projects
-- **Responsive maintenance** — Active issue resolution, regular releases
-- **Clear differentiation** — Solves a specific problem better than alternatives
-- **Documentation quality** — Proper setup guides, API docs, examples
+- **Sustained adoption** - Growing star count over time, not a spike
+- **Production testimonials** - Companies/teams using it in production
+- **Ecosystem integration** - Referenced by other major projects
+- **Responsive maintenance** - Active issue resolution, regular releases
+- **Clear differentiation** - Solves a specific problem better than alternatives
+- **Documentation quality** - Proper setup guides, API docs, examples
 
 ### 🚩 Disqualifying Red Flags
 
@@ -54,7 +54,7 @@ Meeting 3/4 is **not acceptable**. Projects must meet all criteria. The only pat
 
 ### Before Submitting
 
-1. **Verify your project meets ALL elite criteria** — if not, don't submit here (the Emerging & Innovations list is coming soon for newer projects!)
+1. **Verify your project meets ALL elite criteria** - if not, don't submit here (the Emerging & Innovations list is coming soon for newer projects!)
 2. **Check for duplicates** — search the README first
 3. **Ensure correct categorization** — place in the most specific section
 4. **Write a factual description** — one sentence, no fluff
