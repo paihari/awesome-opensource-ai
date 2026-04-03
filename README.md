@@ -64,11 +64,13 @@
 - **[TensorFlow](https://github.com/tensorflow/tensorflow)** ![GitHub stars](https://img.shields.io/github/stars/tensorflow/tensorflow?style=social) - End-to-end platform with excellent production deployment, TPU support, and large-scale serving tools.
 - **[JAX](https://github.com/jax-ml/jax)** ![GitHub stars](https://img.shields.io/github/stars/jax-ml/jax?style=social) + **[Flax](https://github.com/google/flax)** ![GitHub stars](https://img.shields.io/github/stars/google/flax?style=social) - High-performance numerical computing with composable transformations (JIT, vmap, grad). Rising favorite for research and scientific ML.
 - **[Keras](https://github.com/keras-team/keras)** ![GitHub stars](https://img.shields.io/github/stars/keras-team/keras?style=social) - High-level, beginner-friendly API that now runs on multiple backends (TensorFlow, JAX, PyTorch). Perfect for rapid experimentation.
+- **[PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric)** ![GitHub stars](https://img.shields.io/github/stars/pyg-team/pytorch_geometric?style=social) - Library for deep learning on irregular input data such as graphs, point clouds, and manifolds. Part of the PyTorch ecosystem.
 
 #### Rust ML Frameworks
 
 - **[Burn](https://github.com/tracel-ai/burn)** ![GitHub stars](https://img.shields.io/github/stars/tracel-ai/burn?style=social) - Next-generation deep learning framework in Rust. Backend-agnostic with CPU, GPU, WebAssembly support.
 - **[Candle (Hugging Face)](https://github.com/huggingface/candle)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/candle?style=social) - Minimalist ML framework for Rust. PyTorch-like API with focus on performance and simplicity.
+- **[linfa](https://github.com/rust-ml/linfa)** ![GitHub stars](https://img.shields.io/github/stars/rust-ml/linfa?style=social) - Comprehensive Rust ML toolkit with classical algorithms. scikit-learn equivalent for Rust with clustering, regression, and preprocessing.
 
 #### NLP & Transformers
 
