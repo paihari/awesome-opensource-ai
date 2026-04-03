@@ -223,6 +223,7 @@
 - **[LangChain](https://github.com/langchain-ai/langchain)** ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social) - Foundational library for agents, chains, and memory.
 - **[smolagents (Hugging Face)](https://github.com/huggingface/smolagents)** ![GitHub stars](https://img.shields.io/github/stars/huggingface/smolagents?style=social) - Minimalist agent library. Build agents in 3 lines of code with code-first action execution.
 - **[Hermes Agent (NousResearch)](https://github.com/NousResearch/hermes-agent)** ![GitHub stars](https://img.shields.io/github/stars/NousResearch/hermes-agent?style=social) - The agent that grows with you. Autonomous server-side agent with persistent memory that learns and improves over time.
+- **[Agno](https://github.com/agno-agi/agno)** ![GitHub stars](https://img.shields.io/github/stars/agno-agi/agno?style=social) - Build, run, and manage agentic software at scale. High-performance framework for multi-agent systems with memory, knowledge, and tools.
 
 #### Multi-Agent Orchestration
 
@@ -232,6 +233,7 @@
 - **[Llama-Agents](https://github.com/run-llama/llama-agents)** ![GitHub stars](https://img.shields.io/github/stars/run-llama/llama-agents?style=social) - Async-first multi-agent system.
 - **[Mastra](https://github.com/mastra-ai/mastra)** ![GitHub stars](https://img.shields.io/github/stars/mastra-ai/mastra?style=social) - TypeScript-first agent framework with built-in RAG, workflows, tool integrations, observability and observational memory.
 - **[Deer-Flow (ByteDance)](https://github.com/bytedance/deer-flow)** ![GitHub stars](https://img.shields.io/github/stars/bytedance/deer-flow?style=social) - Open-source long-horizon SuperAgent harness that researches, codes, and creates. Handles tasks from minutes to hours with sandboxes, memories, tools, skills, subagents, and message gateway.
+- **[OpenAI Agents SDK](https://github.com/openai/openai-agents-python)** ![GitHub stars](https://img.shields.io/github/stars/openai/openai-agents-python?style=social) - Production-ready lightweight framework for multi-agent workflows. The evolution of Swarm with enhanced orchestration capabilities and enterprise-grade features.
 
 #### Autonomous Coding Agents
 
@@ -242,6 +244,7 @@
 - **[Pi (badlogic)](https://github.com/badlogic/pi-mono)** ![GitHub stars](https://img.shields.io/github/stars/badlogic/pi-mono?style=social) - Terminal coding agent with hash-anchored edits, LSP integration, subagents, MCP support, and package ecosystem.
 - **[Mistral-Vibe (Mistral)](https://github.com/mistralai/mistral-vibe)** ![GitHub stars](https://img.shields.io/github/stars/mistralai/mistral-vibe?style=social) - Minimal CLI coding agent by Mistral. Lightweight, fast, and designed for local development workflows.
 - **[Nanocoder (Nano-Collective)](https://github.com/Nano-Collective/nanocoder)** ![GitHub stars](https://img.shields.io/github/stars/Nano-Collective/nanocoder?style=social) - Beautiful local-first coding agent running in your terminal. Built for privacy and control with support for multiple AI providers via OpenRouter.
+- **[Gemini CLI (Google)](https://github.com/google-gemini/gemini-cli)** ![GitHub stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=social) - Open-source AI agent that brings Gemini's power directly into your terminal. Supports code generation, shell execution, and file editing with full Apache 2.0 licensing.
 
 #### Domain-Specific Agents
 
