@@ -9,17 +9,12 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](../CONTRIBUTING.md)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-blue.svg?style=flat-square)](../LICENSE)
-
----
-
+</div>
 <div align="center">
 
-**[ 🏆 Elite Tier ](../README.md)** • **[ Explore Emerging ](#-contents)** • **[ Submission Guidelines ](../CONTRIBUTING.md)** • **[ License ](#license)**
+**[ 🏆 Elite Tier ](../README.md)** • **[ Submission Guidelines ](../CONTRIBUTING.md)** • **[ License ](#license)**
 
 </div>
-
-> 💡 **Looking for battle-tested, production-proven tools?**  
-> Check the **[Elite Tier](../README.md)** for mature projects that have earned their place through real-world adoption.
 
 ---
 
