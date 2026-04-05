@@ -8,6 +8,17 @@ This spec is **schedule-agnostic** — implementers (cron jobs, manual runs, oth
 
 ## Core Logic
 
+## Clean Start Requirement
+
+Before doing any research, edits, branch creation, or PR work, the runner/agent must start from a clean, current base:
+
+1. Check out `main`
+2. Sync to the latest remote state (`origin/main`)
+3. If the local branch is dirty or diverged, reset to the latest `origin/main` before proceeding
+4. Only then create or switch to the working branch for the current PR
+
+This is mandatory for cron-driven runs so stale local branches, leftover files, or prior failed runs do not leak into new PRs.
+
 ### Inputs (Provided by Runner)
 
 | Input | Description |
@@ -235,6 +246,15 @@ Adding {N} elite-tier projects.
 - [x] OSI license
 - [x] Not already listed
 ```
+
+## Validation Before Opening a PR
+
+Before opening any PR generated from this research loop:
+
+1. Run `python3 tools/validate_awesome.py --skip-remote`
+2. If GitHub auth is available in the runner, also run `python3 tools/validate_awesome.py`
+3. If either validation run reports errors, do **not** open the PR until they are fixed
+4. If only warnings remain, mention them in the PR body only when they are relevant and intentional
 
 ## Limits
 

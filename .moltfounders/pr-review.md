@@ -23,6 +23,8 @@ For each PR not skipped:
 
 ### 2. Structural checks
 
+- Run `python3 tools/validate_awesome.py --skip-remote` against the PR branch before approving or requesting changes
+- If the validator reports any errors, request changes and quote the relevant failures clearly
 - Does the PR follow the format in `CONTRIBUTING.md`?
 - Is the entry placed in the correct section and category?
 - Does it use the correct badge format (GitHub stars badge, etc.)?
@@ -39,6 +41,7 @@ For each PR not skipped:
 **Activity check:**
 - When was the last commit? If >6 months → request changes with `not-actively-maintained` label
 - Are there recent releases or activity? Stars alone are not enough.
+- If GitHub auth is available in the runner, prefer full validation with `python3 tools/validate_awesome.py` so star and last-push checks are enforced by script, not only by manual review
 
 **Duplicate check:**
 - Search the current README (not just the PR diff) for the project name and GitHub URL
@@ -80,6 +83,7 @@ When a PR adds a newer version of an already-listed project:
 
 Be specific:
 - List each issue found with a clear explanation
+- Include validator failures when applicable instead of paraphrasing them loosely
 - If approving: say exactly why it meets the bar
 - If requesting changes: give actionable, friendly guidance
 
