@@ -647,6 +647,13 @@
 - **[Assistant UI](https://github.com/assistant-ui/assistant-ui)** ![GitHub stars](https://img.shields.io/github/stars/assistant-ui/assistant-ui?style=social) - React/TypeScript library for building production-grade AI chat interfaces. Drop-in components for streaming messages, tool calls, and multi-modal inputs.
 - **[Deep Chat](https://github.com/OvidijusParsiunas/deep-chat)** ![GitHub stars](https://img.shields.io/github/stars/OvidijusParsiunas/deep-chat?style=social) - Fully customizable AI chatbot component for your website. Supports OpenAI, direct API services, and custom endpoints. MIT licensed.
 
+#### CLI Tools & API Clients
+
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** ![GitHub stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=social) - Google's open-source AI agent for the terminal. Access Gemini models with built-in tool use, MCP support, and 1M token context. Apache 2.0 licensed.
+- **[LLM (Simon Willison)](https://github.com/simonw/llm)** ![GitHub stars](https://img.shields.io/github/stars/simonw/llm?style=social) - CLI tool and Python library for interacting with dozens of LLMs via remote APIs or locally. Extensible plugin ecosystem, SQLite logging. Apache 2.0 licensed.
+- **[AIChat](https://github.com/sigoden/aichat)** ![GitHub stars](https://img.shields.io/github/stars/sigoden/aichat?style=social) - All-in-one LLM CLI in Rust featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents. Supports 20+ providers. MIT/Apache 2.0 licensed.
+- **[Codex CLI](https://github.com/openai/codex)** ![GitHub stars](https://img.shields.io/github/stars/openai/codex?style=social) - OpenAI's lightweight coding agent that runs in your terminal. Code generation, file editing, and command execution with approval. Apache 2.0 licensed.
+
 #### Testing & Debugging Tools
 
 - **[Promptfoo](https://github.com/promptfoo/promptfoo)** ![GitHub stars](https://img.shields.io/github/stars/promptfoo/promptfoo?style=social) - Systematic LLM testing framework.
