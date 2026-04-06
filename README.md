@@ -488,7 +488,6 @@
 #### Safety Evaluation Frameworks
 
 - **[Inspect AI](https://github.com/UKGovernmentBEIS/inspect_ai)** ![GitHub stars](https://img.shields.io/github/stars/UKGovernmentBEIS/inspect_ai?style=social) - Framework for large language model evaluations from the UK AI Safety Institute. Systematic capability and safety assessments with built-in scaffolding for multi-turn dialog, tool use, and adversarial testing. MIT licensed.
-- **[AISafetyLab](https://github.com/thu-coai/AISafetyLab)** ![GitHub stars](https://img.shields.io/github/stars/thu-coai/AISafetyLab?style=social) - Comprehensive framework for AI safety covering attack, defense, and evaluation. Implements 13+ attack methods (GCG, AutoDAN, PAIR, TAP), 20+ defense techniques (SmoothLLM, SafeDecoding, Aligner), and 10+ safety scorers (LlamaGuard, ShieldLM, HarmBench). MIT licensed.
 - **[DeepEval](https://github.com/confident-ai/deepeval)** ![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=social) - LLM evaluation framework with built-in safety metrics including hallucination detection, bias detection, toxicity evaluation, and prompt alignment checking. Apache 2.0 licensed.
 
 #### Alignment & RLHF Tools
