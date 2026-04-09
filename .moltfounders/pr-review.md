@@ -2,93 +2,117 @@
 
 ## When to Run
 
-On every agent loop cycle, scan all open pull requests.
+On every PR review loop cycle, scan all open pull requests.
 
-## Skip Conditions (do not process if any apply)
+## Trusted Agent Identity
 
-- PR already has `agent:reviewed` label → skip entirely
-- PR is a draft → skip (wait until it's marked ready)
-- PR was opened by an agent → skip (avoid self-review loops)
-- PR is from a bot (dependabot, renovate, etc.) → label `needs-human`, skip
-- **PR has merge conflicts** (`mergeable = false`) → comment asking author to rebase, apply `needs-info` label, do NOT approve, skip remaining review steps entirely
+- Any PR authored by GitHub user `alvinreal` is an **agent PR**.
+- Any other PR is a **community PR**.
 
-## Review Steps
+## Processing Order
 
-For each PR not skipped:
+1. Process all **agent PRs** first
+2. Then process **community PRs**
 
-### 1. Understand what the PR does
+## Global Rules
 
-- Read the PR title and description
-- Read the diff carefully — what entries are being added, removed, or changed?
+- Skip all draft PRs
+- Reopened PRs are treated as fresh
+- Community PRs already labeled `agent:reviewed` are skipped until new activity arrives
+- Agent PRs are re-evaluated every run
 
-### 2. Structural checks
+## Agent PR Path
 
-- Does the PR follow the format in `CONTRIBUTING.md`?
-- Is the entry placed in the correct section and category?
-- Does it use the correct badge format (GitHub stars badge, etc.)?
-- Is the link valid? (Check the URL resolves to the right repo)
-- Is the description concise and factual (not marketing language)?
-- Does it include the project name in bold + link format?
+### Auto-merge eligibility
 
-### 3. Content checks (for additions)
+An agent PR may be auto-merged only if all are true:
 
-**Open source verification:**
-- Is the license OSI-approved? Check the repo's LICENSE file directly.
-- Is the full code/model publicly available, or is it "open-ish" (API-only, partial weights)? If the latter → request changes, explain the standard.
+- authored by `alvinreal`
+- touches **`README.md` only**
+- stays within **one category only**
+- is **non-structural**
+- passes all required validation
 
-**Activity check:**
-- When was the last commit? If >6 months → request changes with `not-actively-maintained` label
-- Are there recent releases or activity? Stars alone are not enough.
+Structural changes include heading changes, category renames, section/order/layout changes, and formatting convention changes.
 
-**Duplicate check:**
-- Search the current README (not just the PR diff) for the project name and GitHub URL
-- If duplicate → comment clearly, apply `duplicate` label, request closure
+### Required checks before merge
 
-**Category fit:**
-- Does it belong in the section it was placed in?
-- If it could fit better elsewhere, suggest the right section
+Run all of these before merging:
 
-**Quality bar:**
-- Is this project genuinely notable? Real adoption, useful to the community?
-- Avoid listing every possible project — the list should stay curated and high-signal
+1. `python3 tools/validate_awesome.py --skip-remote`
+2. Direct GitHub API verification for stars, activity, license, and other factual claims
+3. `python3 tools/validate_awesome.py` when credentials are available
 
-### 4. For removals
+If any required validation fails, merge is blocked.
 
-- Is the reason stated? If not, ask.
-- Verify the claim: is the project actually dead/closed-source/abandoned?
-- If valid → approve with a note confirming your verification
+### Post-merge verification
 
-### 5. For corrections
+If one or more agent PRs are merged during the run:
 
-- Is the correction accurate?
-- Does it maintain correct formatting?
+1. Wait for the resulting `main` validation workflow/checks to start
+2. Confirm the relevant `main` CI run completes successfully with no errors
+3. If `main` CI fails or does not complete cleanly, stop unattended merging and escalate for human attention
 
-### 6. Leave your review comment
+When multiple agent PRs are eligible in the same cycle, merge them one at a time and confirm `main` CI is green after each merge before merging the next PR.
 
-Be specific:
-- List each issue found with a clear explanation
-- If approving: say exactly why it meets the bar
-- If requesting changes: give actionable, friendly guidance
+### Fixable issues
 
-**Do not:** leave vague comments like "looks good" or "needs work" without detail.
+One fix attempt is allowed for clearly fixable issues only:
 
-### 7. Apply labels and set review status
+- formatting
+- placement/category adjustment
+- wording cleanup
+- badge/entry format fixes
+- validator-fix issues
+- simple merge conflict resolution
 
-- Always apply `agent:reviewed`
-- Apply `agent:approved` if the PR meets all criteria
-- Apply `agent:changes-requested` if changes are needed
-- Apply relevant issue labels (`duplicate`, `not-open-source`, etc.) as needed
-- Apply `needs-human` for anything that requires maintainer judgment (borderline cases, disputes, etc.)
+If still failing after one fix attempt, close the PR with a short specific reason.
 
-## Important: Agent approval ≠ merge
+### Conflict handling
 
-An `agent:approved` label means the PR passed automated review. **Only the maintainer merges.** The agent never merges PRs directly.
+- Community PR with conflicts: skip
+- Agent PR with conflicts: if otherwise eligible, attempt one safe resolution and re-validate
 
-## Edge Cases
+### Temporary infrastructure failure
 
-- **PR has merge conflicts:** Already handled as a skip condition above — never approve a PR with conflicts.
-- **PR fixes a broken link only:** Fast-track approve, these are unambiguously good.
-- **Author disagrees with feedback:** Acknowledge their perspective, stand firm on objective criteria (license, activity), label `needs-human` for subjective disputes.
-- **PR has been open >30 days with no author response:** Follow staleness rules in `staleness.md`.
-- **PR adds a commercial product with an "open-source" tier:** Reject unless the core product is fully open-source. Freemium ≠ open-source.
-- **PR adds something already on a sister list (e.g. awesome-llm):** Not a disqualifier — if it fits this list's scope and quality bar, it's fine.
+If required checks fail because of temporary infrastructure problems:
+
+- leave the agent PR open
+- comment once on first temporary failure
+- retry on later runs
+- after **3** temporary infra failures, add `needs-human`, comment once that automation is paused, and stop touching that PR automatically
+- resume automation for that PR only after meaningful human activity (for example: new commit, rebase, edit, or comment)
+
+### Outcomes for agent PRs
+
+- **Eligible and valid:** merge, then verify resulting `main` CI is green
+- **Valid but outside auto-merge scope:** leave open and apply `needs-human`
+- **Mixed-scope PR** (safe + forbidden changes): close
+- **Two open agent PRs for same category:** keep oldest, close newer
+- **Broken PR being replaced:** close with explicit explanation
+
+## Community PR Path
+
+### Review requirements
+
+Review community PRs against `CONTRIBUTING.md` and the current `README.md` state.
+Verify factual claims via GitHub API rather than trusting the PR description.
+
+### Outcomes for community PRs
+
+- **Valid:** leave a clear review comment and apply `agent:reviewed`, `agent:approved`, and `needs-human`
+- **Needs changes:** leave a clear review comment and apply `agent:changes-requested`
+- **Mechanically invalid:** close with a specific reason and apply `agent:rejected`
+
+Community PRs are never auto-merged.
+
+### Overlap rules
+
+- If an agent PR and community PR overlap, the agent PR takes priority operationally
+- While unresolved, leave the community PR open with `needs-human`
+- If the agent PR merges first and the community PR becomes redundant, close it with an explicit note that the change already merged via another PR
+
+### Label maintenance
+
+- If a community PR gets new commits or other meaningful new activity, clear outdated agent review labels before re-reviewing it
+- Remove outdated failure or escalation labels automatically when the PR state becomes valid again
